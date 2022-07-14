@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+  Project     : trips
+  Filename    : trips.html
+  Author      : Camarly Thomas <camarly@stu.ucc.edu.jm>
+  Id.No.      : 20204241
+  Course      : ITT208
+  Version     : 0.1
+  Copyright   : All rights reserved 2 Dec 2021 20:40:45
+  Description : 
+
+Several images included attribution is given to the respective Attractions websites and social media pages. 
+
+Code snippets were referenced from w3schools.com and mozillaFDN.
+
+-->
+<html lang="en" dir="ltr">
+    <head>
+        <title>Jamaica Trips</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/trips.css">
+    </head>
+    <body>
+        <section>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Jamaica Trips</a></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="resorts.html">Resorts</a></li>
+                    <li><a href="trips.html">Register for Combo Trips</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="space"> 
+
+        </div>
+        <section class ="reg">
+            <form class="registration" action="mailto:bookings@purejamaicatours.com" method="POST" enctype="multipart/form-data">
+                <h1>Jamaica Tours Combo Trip Registration</h1>
+                <div>
+                    <label class="name">
+                        <span>First Name</span>
+                        <input placeholder="First Name" type="text" required>
+                    </label>
+                </div>
+                <div>
+                    <label class="name2">
+                        <span>Last Name</span>
+                        <input placeholder="Last Name" type="text" required>
+                    </label>
+                </div>
+                <div>
+                    <div >
+                        <span>Age</span><br>
+                        <input type="range" value="15" min="15" max="99"  id="ageValue" class="age" oninput="ageValueDisp.value = ageValue.value">
+                        <output id="ageValueDisp"></output>
+                        <!--code attribution to W3Schools.com - Camarly-->  
+                    </div>
+                </div>
+                <div>
+                    <span>Gender</span><br>
+                    <label class="pure-material-textfield-outlined">
+                        <input type="radio" value="Male" required>
+                        <span>Male</span>
+                        <input type="radio" value="Female" required>
+                        <span>Female</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="pure-material-textfield-outlined">
+                        <span>Email</span>
+                        <input placeholder=" " type="email" required>
+                    </label>
+                </div>
+                <div>
+                    <label class="ComboTripSelection">
+                        <span>Combo Trip Selection</span><br>
+                        <select>
+                            <option>Blue Hole, Secret Falls and Dunn’s River Falls. </option>
+                            <option>Swimming with the Dolphins at Dolphin Cove (Negril)</option>
+                            <option>Green Grotto Caves Tour (Montego Bay)</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label class="time">
+                        <span>Departure Times: </span><br>
+                        <input type="radio" required>
+                        <span>8am</span>
+                        <input type="radio" required>
+                        <span>9am</span>
+                        <input type="radio" required>
+                        <span>10am</span>
+                    </label>
+                </div>
+
+                <div>
+                    <a href="mailto:bookings@purejamaicatours.com"> 
+                        <button class="submit" type="submit">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </section>
+        <div class="copyright">
+            <p><strong>Jamaica Trips&copy; <br>Resorts and Attractions , <br>1 Resort Way, <br>Ocho Rios Jamaica</strong><br></p>
+        </div>
+        <div class="footerSection">
+            <div class="footer">
+                <div class="footerHeader">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resorts.html">Resorts</a></li>
+                        <li><a href="trips.html">Register for Combo Trips</a></li>
+                    </ul>
+                </div>
+<!--
+                <div class="footerHeader">
+                    <h2>Experience More</h2>
+                    <ul>
+                        <li><a href="index.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Bookings</a></li>
+                        <li><a href="resorts.html">More</a></li>
+                        <li><a href="trips.html">Jobs</a></li>
+                    </ul>
+                </div>-->
+                <div class="footerHeader">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href="https://facebook.com">Facebook</a></li>
+                        <li><a href="https://instagram.com">Instagram</a></li>
+                        <li><a href="https://youtube.com">Youtube</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footerHeaderEmailForm">
+                    <h2>Join our mailing list</h2>
+                    <input type="email" placeholder="Enter your email address" id="footerEmail">
+                    <input type="submit" value="Sign-Up" id="footerEmailBtn" onclick="return clicked();">
+                </div>
+            </div>
+        </div>
+        <script src="js/trips.js"></script>
+
+    </body>
+
+</html>
